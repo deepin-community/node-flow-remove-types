@@ -1,0 +1,35 @@
+Source: node-flow-remove-types
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-buildinfo
+ , nodejs
+ , node-babylon
+ , node-vlq
+Standards-Version: 4.1.4
+Homepage: https://github.com/flowtype/flow-remove-types
+Vcs-Git: https://salsa.debian.org/js-team/node-flow-remove-types.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-flow-remove-types
+
+Package: node-flow-remove-types
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-babylon
+ , node-vlq
+Description: Removes Flow type annotations from JavaScript files
+ Turn your JavaScript with Flow type annotations into standard JavaScript in an
+ instant with no configuration and minimal setup.
+ .
+ Flow provides static type checking to JavaScript which can both help find and
+ detect bugs long before code is deployed and can make code easier to read and
+ more self-documenting. The Flow tool itself only reads and analyzes code.
+ .
+ Running code with Flow type annotations requires first removing the
+ annotations which are non-standard JavaScript.
+ .
+ Node.js is an event-based server-side JavaScript engine.

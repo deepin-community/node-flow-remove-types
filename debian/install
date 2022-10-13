@@ -1,0 +1,6 @@
+flow-node usr/lib/nodejs/flow-remove-types/
+index.js usr/lib/nodejs/flow-remove-types/
+PATENTS usr/lib/nodejs/flow-remove-types/
+package.json usr/lib/nodejs/flow-remove-types/
+register.js usr/lib/nodejs/flow-remove-types/
+flow-remove-types usr/lib/nodejs/flow-remove-types/
