@@ -1,0 +1,16 @@
+Subject: remove v8 unsupported --code-comments flag in test suite
+ v8 in nodejs 16 dropped that flag in non-debug builds.
+ It doesn't bring anything to the test anyway.
+Last-Update: 2022-05-03
+Author: Jérémy Lal <kapouer@melix.org>
+Forwarded: not-needed, archived upstream
+
+--- a/test.sh
++++ b/test.sh
+@@ -46,5 +46,5 @@
+ 
+ # Test flow-node with options
+ echo "Test: flow-node with options"
+-FLOW_NODE_OPTS=$(./flow-node --code-comments -p 'process.argv.length');
++FLOW_NODE_OPTS=$(./flow-node -p 'process.argv.length');
+ if [ "$FLOW_NODE_OPTS" != 4 ]; then echo 'flow-node with options failed'; exit 1; fi;

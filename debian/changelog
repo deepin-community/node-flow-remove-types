@@ -1,3 +1,32 @@
+node-flow-remove-types (1.2.3-7) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-flow-remove-types: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 14:21:12 +0000
+
+node-flow-remove-types (1.2.3-6) unstable; urgency=medium
+
+  * Team upload
+  * Patch to drop node --code-comments in tests
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 03 May 2022 23:59:24 +0200
+
+node-flow-remove-types (1.2.3-5) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Update nodejs dependency to nodejs:any
+  * Use dh-sequence-nodejs auto test & install
+  * Build manpages with help2man
+
+ -- Yadd <yadd@debian.org>  Fri, 26 Nov 2021 06:33:02 +0100
+
 node-flow-remove-types (1.2.3-4) unstable; urgency=medium
 
   * Remove constraints unnecessary since buster:
