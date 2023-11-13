@@ -1,6 +1,0 @@
-Tests: require
-Depends: node-flow-remove-types
-
-Test-Command: bash test.sh
-Depends: @
-Restrictions: allow-stderr
